@@ -15,6 +15,15 @@ body {
     color: #fff;
 }
 
+h1 {
+    font-size: 2.5em;
+}
+
+.hero-text {
+    font-size: 1.5em;
+    color: #cccccc;
+}
+
 .left-nav {
     position: absolute;
     left: 24px;
@@ -75,4 +84,36 @@ body {
 .contact-btn:hover {
     z-index: 1;
     color: #1a1a1a;
+}
+
+.hero-photo {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.cycle-container {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: bottom;
+    position: relative;
+    top: 2px;
+}
+
+.cycle-active {
+    display: inline-block;
+    transform: translateY(0);
+    opacity: 1;
+    font-size: 1em;
+    transition: transform 0.4s, opacity 0.4s;
+    border-bottom: 2px solid #fb742d;
+    margin-bottom: -10px;
+}
+
+.cycle-exit {
+    display: inline-block;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.4s, opacity 0.4s;
 }

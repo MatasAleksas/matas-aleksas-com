@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Cabin  } from "next/font/google"
 import NavBar from "@/components/Navbar";
+import Hero from "@/components/Hero";
 
 const cabin = Cabin ({
     subsets: ["latin"],
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={cabin.className}>
         <NavBar />
+        <Hero />
         {children}
       </body>
     </html>
