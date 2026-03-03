@@ -15,6 +15,15 @@ body {
     color: #fff;
 }
 
+.left-nav {
+    position: absolute;
+    left: 24px;
+}
+
+.upper-nav {
+    position: relative;
+}
+
 .nav-link {
     position: relative;
 }
@@ -33,4 +42,37 @@ body {
 
 .nav-link:hover::after {
     width: 100%;
+}
+
+.contact-btn {
+    position: absolute;
+    overflow: hidden;
+    right:24px;
+    border: #fb742d solid 1px;
+    color: #fb742d;
+    padding: 6px 16px;
+    border-radius: 9999px;
+    z-index: 1;
+}
+
+.contact-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background-color: #fb742d;
+    transition: width 0.4s;
+    z-index: -1;
+}
+
+.contact-btn:hover::before {
+    width: 100%;
+}
+
+.contact-btn:hover {
+    z-index: 1;
+    color: #1a1a1a;
 }
