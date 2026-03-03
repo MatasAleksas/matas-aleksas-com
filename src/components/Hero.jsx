@@ -1,5 +1,8 @@
 "use client";
 import Image from 'next/image'
+import DarkVeil from '@/components/DarkVeil'
+import { FaGithub, FaLinkedin, FaInstagram, FaFileAlt} from 'react-icons/fa'
+import { MdEmail } from 'react-icons/md'
 import { useState, useEffect } from 'react'
 
 export default function Hero() {
@@ -23,8 +26,19 @@ export default function Hero() {
 
     return (
         <section id="home" className='flex items-center justify-center gap-20 h-[75vh] px-20'>
-            <div className="relative z-10 bg-grey flex items-center gap-20 p-10 rounded-2xl">
-                <div className="flex flex-col">
+            <div className="absolute top-0 left-0 w-full h-full z-0">
+                <DarkVeil
+                    hueShift={217}
+                    noiseIntensity={0}
+                    scanlineIntensity={0}
+                    speed={0.8}
+                    scanlineFrequency={0}
+                    warpAmount={4.2}
+                />
+            </div>
+
+            <div className="relative z-10 bg-[#1a1a1a] flex items-center gap-20 p-10 rounded-2xl">
+                <div className="flex flex-col mb-10">
                     <h1>Hello, I&#39;m Matas.</h1>
                     <p className={"hero-text"}>I am a
                          <span className="cycle-container flex px-2 h-[37px]">
@@ -33,6 +47,24 @@ export default function Hero() {
                             </span>
                          </span>
                     </p>
+
+                    <div className="flex gap-4 mt-4 text-lg">
+                        <a href="https://github.com/MatasAleksas" target="_blank" rel="noopener noreferrer" className="text-grey hover:text-orange transition-colors">
+                            <FaGithub />
+                        </a>
+                        <a href="https://www.linkedin.com/in/matas-aleksas/" target="_blank" rel="noopener noreferrer" className="text-grey hover:text-orange transition-colors">
+                            <FaLinkedin />
+                        </a>
+                        <a href="https://www.instagram.com/matasaleksas/" target="_blank" rel="noopener noreferrer" className="text-grey hover:text-orange transition-colors">
+                            <FaInstagram />
+                        </a>
+                        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-grey hover:text-orange transition-colors">
+                            <FaFileAlt />
+                        </a>
+                        <a href="#contact" target="_blank" rel="noopener noreferrer" className="text-grey hover:text-orange transition-colors">
+                            <MdEmail />
+                        </a>
+                    </div>
                 </div>
 
                 <Image className={"hero-photo"}
