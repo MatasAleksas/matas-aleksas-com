@@ -3,7 +3,7 @@ import ShinyText from './ShinyText';
 
 export default function Navbar() {
     return (
-        <nav className="fixed upper-nav flex justify-center items-center mx-auto top-0 left-0 w-full z-50 px-3 py-4">
+        <nav className="fixed upper-nav flex justify-center items-center mx-auto top-0 left-0 w-full z-30 px-3 py-4">
             <div className="left-nav flex mx-13 gap-10 items-center">
                 <a className="text-orange nav-link" href='#about'>About</a>
                 <a className="text-orange nav-link" href='#professional'>Professional</a>
