@@ -1,2 +1,36 @@
-@import "tailwindcss/preflight";
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+    --color-light: #f6f6f6;
+    --color-orange: #fb742d;
+    --color-grey: #47464d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    background-color: #fb742d;
+    width: 0;
+    transition: width 0.4s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
