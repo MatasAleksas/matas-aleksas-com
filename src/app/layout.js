@@ -2,6 +2,7 @@ import "./globals.css";
 import { Cabin  } from "next/font/google"
 import NavBar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import Intro from "@/components/Intro";
 import LoadingScreen from "@/components/LoadingScreen"
 
 const cabin = Cabin ({
@@ -16,6 +17,10 @@ export default function RootLayout({ children }) {
         <LoadingScreen />
         <NavBar />
         <Hero />
+        <Intro />
+        <div className="flex mx-auto top-0 left-0 w-full">
+            <p>Hey</p>
+        </div>
         {children}
       </body>
     </html>

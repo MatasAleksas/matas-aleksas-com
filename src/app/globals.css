@@ -24,15 +24,6 @@ h1 {
     color: #cccccc;
 }
 
-.left-nav {
-    position: absolute;
-    left: 24px;
-}
-
-.upper-nav {
-    position: relative;
-}
-
 .nav-link {
     position: relative;
 }
@@ -55,9 +46,8 @@ h1 {
 }
 
 .contact-btn {
-    position: absolute;
+    position: relative;
     overflow: hidden;
-    right:24px;
     border: #fb742d solid 1px;
     color: #fb742d;
     padding: 6px 16px;

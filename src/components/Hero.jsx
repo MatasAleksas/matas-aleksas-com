@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import Image from 'next/image'
 import DarkVeil from '@/components/DarkVeil'
 import { FaGithub, FaLinkedin, FaInstagram, FaFileAlt, FaChevronDown} from 'react-icons/fa'
@@ -21,11 +21,11 @@ export default function Hero() {
         }, 3000);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [words.length]);
 
 
     return (
-        <section id="home" className='flex items-center justify-center gap-20 h-[75vh] px-20'>
+        <section id="home" className='flex items-center justify-center gap-20 h-[95vh] px-20'>
             <div className="absolute top-0 left-0 w-full h-full z-0">
                 <DarkVeil
                     hueShift={217}
@@ -41,7 +41,7 @@ export default function Hero() {
                 <div className="flex flex-col mb-10">
                     <h1>Hello, I&#39;m Matas.</h1>
                     <p className={"hero-text"}>I am a
-                         <span className="cycle-container flex px-2 h-[37px]">
+                         <span className="cycle-container flex px-2 h-9.25">
                             <span className={animating ? "cycle-exit" : "cycle-active"}>
                                 {words[currentIndex]}
                             </span>
