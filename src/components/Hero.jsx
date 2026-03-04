@@ -37,7 +37,7 @@ export default function Hero() {
                 />
             </div>
 
-            <div className="relative z-10 bg-[#1a1a1a] flex items-center gap-20 p-10 rounded-2xl">
+            <div className="hero-box relative z-10 bg-white/5 backdrop-blur-md border border-white/10 flex items-center gap-20 p-14 rounded-2xl" >
                 <div className="flex flex-col mb-10">
                     <h1>Hello, I&#39;m Matas.</h1>
                     <p className={"hero-text"}>I am a
@@ -48,7 +48,7 @@ export default function Hero() {
                          </span>
                     </p>
 
-                    <div className="flex gap-4 mt-4 text-lg">
+                    <div className="flex gap-4 mt-4 text-xl">
                         <a href="https://github.com/MatasAleksas" target="_blank" rel="noopener noreferrer" className="text-grey hover:text-orange transition-colors">
                             <FaGithub />
                         </a>
