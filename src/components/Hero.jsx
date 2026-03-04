@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image'
 import DarkVeil from '@/components/DarkVeil'
-import { FaGithub, FaLinkedin, FaInstagram, FaFileAlt} from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaInstagram, FaFileAlt, FaChevronDown} from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import { useState, useEffect } from 'react'
 
@@ -65,6 +65,13 @@ export default function Hero() {
                             <MdEmail />
                         </a>
                     </div>
+
+                    <a href="#about" className="explore-btn">
+                        Explore More
+                        <span className="explore-chevron">
+                            <FaChevronDown />
+                        </span>
+                    </a>
                 </div>
 
                 <Image className={"hero-photo"}

@@ -153,3 +153,34 @@ h1 {
 .hero-box {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
+
+.explore-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #47464d;
+    margin-top: 24px;
+    transition: color 0.3s;
+    font-size: 0.9em;
+}
+
+.explore-btn:hover {
+    color: #fb742d;
+}
+
+.explore-chevron {
+    animation: bounce 2s infinite;
+    will-change: transform;
+    display: inline-flex;
+    position: relative;
+    top: 2px;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(4px);
+    }
+}
