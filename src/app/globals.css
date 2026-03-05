@@ -19,6 +19,45 @@ h1 {
     font-size: 2.5em;
 }
 
+.intro-h1 {
+    font-size: 3em;
+    margin-bottom: 1.5em;
+}
+
+.intro-p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    color: #cccccc;
+}
+
+.intro-p:last-child {
+    margin-bottom: .5em;
+}
+
+.intro-h1-container {
+    position: relative;
+}
+
+.intro-h1-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.typing-cursor {
+    animation: blink 1s infinite;
+    will-change: opacity;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
 .hero-text {
     font-size: 1.5em;
     color: #cccccc;

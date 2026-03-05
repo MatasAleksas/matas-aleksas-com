@@ -18,9 +18,6 @@ export default function RootLayout({ children }) {
         <NavBar />
         <Hero />
         <Intro />
-        <div className="flex mx-auto top-0 left-0 w-full">
-            <p>Hey</p>
-        </div>
         {children}
       </body>
     </html>
