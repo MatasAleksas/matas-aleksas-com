@@ -8,6 +8,7 @@ import Professional from "@/components/Professional";
 import Personal from "@/components/Personal";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const cabin = Cabin ({
     subsets: ["latin"],
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={cabin.className}>
+        <ScrollToTop />
         <LoadingScreen />
         <NavBar />
         <Hero />
