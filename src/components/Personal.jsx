@@ -17,6 +17,7 @@ export default function Personal() {
 
     const cards = useMemo(() =>
         personal.map((item, i) => (
+            // eslint-disable-next-line @next/next/no-img-element
             <img
                 key={i}
                 src={item.image}
@@ -26,7 +27,7 @@ export default function Personal() {
         )), []);
 
     return (
-      <section ref={personalRef} id="personal" className="py-32 px-6 max-w-6xl mx-auto">
+      <section id="personal" ref={personalRef} className="py-32 px-6 max-w-6xl mx-auto">
           <motion.h2
               className="text-4xl font-bold text-center mb-20 text-orange"
               initial={{ opacity: 0, y: 30 }}

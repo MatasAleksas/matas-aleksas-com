@@ -5,9 +5,9 @@ import {certificationItems} from "@/data/certifications"
 import { projects } from "@/data/projects"
 import SpotlightCard from "@/components/SpotlightCard";
 
-export default function Professional(props) {
+export default function Professional() {
     return (
-        <section className="py-32 px-6 bg-[#161616]">
+        <section id="professional" className="py-32 px-6 bg-[#161616]">
             <div className="w-full max-w-6xl mx-auto ">
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}

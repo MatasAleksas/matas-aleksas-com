@@ -64,7 +64,7 @@ export default function Hero() {
                         <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-grey hover:text-orange transition-colors">
                             <FaFileAlt />
                         </a>
-                        <a href="#contact" target="_blank" rel="noopener noreferrer" className="text-grey hover:text-orange transition-colors">
+                        <a href="#contact" className="text-grey hover:text-orange transition-colors">
                             <MdEmail />
                         </a>
                     </div>
