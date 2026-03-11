@@ -7,6 +7,7 @@ import LoadingScreen from "@/components/LoadingScreen"
 import Professional from "@/components/Professional";
 import Personal from "@/components/Personal";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const cabin = Cabin ({
     subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <div className="section-divider" />
         <Contact />
         {children}
+        <Footer />
       </body>
     </html>
   );
