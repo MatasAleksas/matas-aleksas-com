@@ -4,6 +4,7 @@ import NavBar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
 import LoadingScreen from "@/components/LoadingScreen"
+import Professional from "@/components/Professional";
 
 const cabin = Cabin ({
     subsets: ["latin"],
@@ -17,7 +18,11 @@ export default function RootLayout({ children }) {
         <LoadingScreen />
         <NavBar />
         <Hero />
+        <div className="section-divider" />
         <Intro />
+        <div className="section-divider" />
+        <Professional />
+        <div className="section-divider" />
         {children}
       </body>
     </html>
