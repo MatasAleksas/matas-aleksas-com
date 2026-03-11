@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <LoadingScreen />
         <NavBar />
         <Hero />
-        <div className="section-divider" />
+        <div className="h-42 bg-linear-to-b from-black to-[#161616]" />
         <Intro />
         <div className="section-divider" />
         <Professional />

@@ -43,7 +43,8 @@ export default function Intro() {
     }, []);
 
     return (
-        <section ref={sectionRef} className="pt-55 pb-50 px-6 bg-[#161616]">
+        <section ref={sectionRef} className="pt-55 pb-50 px-6 bg-gradient-to-b from-[#1a1a1a] to-[#161616]">
+
             <div className="max-w-4xl mx-auto">
                 <div className="intro-h1-container">
                     <h1 className="intro-h1 invisible">
