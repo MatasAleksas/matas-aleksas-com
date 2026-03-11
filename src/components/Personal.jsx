@@ -4,9 +4,11 @@ import {motion, AnimatePresence} from "framer-motion";
 import Stack from "./Stack";
 import TwoTruths from "./TwoTruths";
 import {personal} from "@/data/personal";
+import { useInView } from "@/hooks/useInView";
 
 export default function Personal() {
     const [currentIndex, setCurrentIndex] = useState(personal.length - 1);
+    const [personalRef, personalInView] = useInView();
 
     const handleCardChange = (index) => {
         console.log("Card index:", index);
@@ -24,7 +26,7 @@ export default function Personal() {
         )), []);
 
     return (
-      <section id="personal" className="py-32 px-6 max-w-6xl mx-auto">
+      <section ref={personalRef} id="personal" className="py-32 px-6 max-w-6xl mx-auto">
           <motion.h2
               className="text-4xl font-bold text-center mb-20 text-orange"
               initial={{ opacity: 0, y: 30 }}
@@ -42,22 +44,25 @@ export default function Personal() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
           >
-              Here's what I'm all about.
+              Here&#39;s what I&#39;m all about.
           </motion.p>
 
           <div className="flex items-center justify-center gap-32">
 
               <div className="flex flex-col items-center">
+
                   <div style={{ width: 350, height: 350 }}>
-                      <Stack
+                      {personalInView &&
+                        <Stack
                           randomRotation={false}
                           sensitivity={200}
                           cards={cards}
                           onCardChange={handleCardChange}
                           sendToBackOnClick={true}
                           autoplay={false}
-                      />
+                        />}
                   </div>
+
                   <div className="flex gap-1 mt-4">
                       {[...personal].reverse().map((_, index) => {
                           const reversedIndex = personal.length - 1 - index;

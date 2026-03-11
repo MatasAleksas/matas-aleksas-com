@@ -4,8 +4,11 @@ import DarkVeil from '@/components/DarkVeil'
 import { FaGithub, FaLinkedin, FaInstagram, FaFileAlt, FaChevronDown} from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import { useState, useEffect } from 'react'
+import { useInView } from "@/hooks/useInView";
+
 
 export default function Hero() {
+    const [heroRef, heroInView] = useInView(0);
     const words = ["Student", "Developer", "Problem Solver", "Creator", "Designer"]
     const [currentIndex, setCurrentIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
@@ -25,16 +28,16 @@ export default function Hero() {
 
 
     return (
-        <section id="home" className='flex items-center justify-center gap-20 h-[95vh] px-20'>
+        <section ref={heroRef} id="home" className='flex items-center justify-center gap-20 h-[95vh] px-20'>
             <div className="absolute top-0 left-0 w-full h-full z-0">
-                <DarkVeil
+                {heroInView && <DarkVeil
                     hueShift={217}
                     noiseIntensity={0}
                     scanlineIntensity={0}
                     speed={0.8}
                     scanlineFrequency={0}
                     warpAmount={4.2}
-                />
+                />}
             </div>
 
             <div className="hero-box relative z-10 bg-white/5 backdrop-blur-md border border-white/10 flex items-center gap-20 p-14 rounded-2xl" >
