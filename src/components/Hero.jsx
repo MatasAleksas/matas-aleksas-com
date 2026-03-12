@@ -76,7 +76,7 @@ export default function Hero() {
                 </div>
 
                 <Image className={"hero-photo shrink-0"}
-                       src={"/images/profile-placeholder.webp"}
+                       src={"/images/hero.webp"}
                        width={250}
                        height={250}
                        alt={"Picture of author"}
