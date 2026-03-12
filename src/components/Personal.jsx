@@ -9,7 +9,6 @@ export default function Personal() {
     const [currentIndex, setCurrentIndex] = useState(personal.length - 1);
 
     const handleCardChange = (index) => {
-        console.log("Card index:", index);
         setCurrentIndex(index);
     };
 

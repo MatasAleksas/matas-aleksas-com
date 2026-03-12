@@ -10,9 +10,10 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
-const cabin = Cabin ({
+const cabin = Cabin({
     subsets: ["latin"],
     weight: ["400", "500", "600", "700"],
+    display: "swap",
 });
 
 export default function RootLayout({ children }) {

@@ -6,6 +6,13 @@
     --color-grey: #47464d;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -222,7 +229,7 @@ h1 {
     width: 250px;
     height: 250px;
     object-fit: cover;
-    box-shadow: 0 0 20px rgba(251, 116, 45, 0.2);
+    filter: drop-shadow(0 0 20px rgba(251, 116, 45, 0.2));
 }
 
 .cycle-container {

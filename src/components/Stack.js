@@ -180,6 +180,7 @@ export default function Stack({
                                 stiffness: animationConfig.stiffness,
                                 damping: animationConfig.damping
                             }}
+                            loading="lazy"
                         >
                             {card.content}
                         </motion.div>
