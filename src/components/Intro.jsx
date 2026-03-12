@@ -43,7 +43,7 @@ export default function Intro() {
     }, []);
 
     return (
-        <section id="about" ref={sectionRef} className="pt-55 pb-50 px-6 bg-linear-to-b from-[#1a1a1a] to-[#161616]">
+        <section id="about" ref={sectionRef} className="pt-24 pb-20 md:pt-55 md:pb-50 px-4 md:px-6 bg-linear-to-b from-[#1a1a1a] to-[#161616]">
 
             <div className="max-w-4xl mx-auto">
                 <div className="intro-h1-container">

@@ -13,6 +13,38 @@
     }
 }
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .intro-h1 {
+        font-size: 1.8em;
+        margin-bottom: 1em;
+    }
+
+    .intro-p {
+        font-size: 1em;
+    }
+
+    .hero-text {
+        font-size: 1.15em;
+    }
+
+    .hero-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .progress-track {
+        max-width: 100%;
+    }
+
+    .contact-submit {
+        width: 100%;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -262,6 +294,7 @@ h1 {
 
 .progress-track {
     width: 200px;
+    max-width: 100%;
     height: 2px;
     margin-top: 16px;
     background: transparent;

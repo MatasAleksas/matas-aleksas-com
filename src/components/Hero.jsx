@@ -26,7 +26,7 @@ export default function Hero() {
 
 
     return (
-        <section id="home" className='flex items-center justify-center gap-20 h-[95vh] px-20'>
+        <section id="home" className='flex items-center justify-center gap-20 h-[95vh] px-4 md:px-20'>
             <div className="absolute top-0 left-0 w-full h-full z-0">
                 <DarkVeil
                     hueShift={217}
@@ -38,11 +38,11 @@ export default function Hero() {
                 />
             </div>
 
-            <div className="hero-box relative z-10 bg-white/5 backdrop-blur-md border border-white/10 flex items-center gap-20 p-14 rounded-2xl" >
-                <div className="flex flex-col mb-10">
-                    <h1>Hello, I&#39;m Matas.</h1>
-                    <p className={"hero-text"}>I am a
-                         <span className="cycle-container flex px-2 h-9.25">
+            <div className="hero-box relative z-10 bg-white/5 backdrop-blur-md border border-white/10 flex flex-col-reverse md:flex-row items-center gap-8 md:gap-20 p-6 md:p-14 rounded-2xl max-w-full" >
+                <div className="flex flex-col items-center md:items-start mb-4 md:mb-10">
+                    <h1 className="text-2xl md:text-4xl text-center md:text-left">Hello, I&#39;m Matas.</h1>
+                    <p className={"hero-text text-center md:text-left"}>I am a
+                        <span className="cycle-container flex px-2 h-9.25">
                             <span className={animating ? "cycle-exit" : "cycle-active"}>
                                 {words[currentIndex]}
                             </span>
@@ -75,11 +75,11 @@ export default function Hero() {
                     </a>
                 </div>
 
-                <Image className={"hero-photo"}
-                    src={"/images/profile-placeholder.webp"}
-                    width={250}
-                    height={250}
-                    alt={"Picture of author"}
+                <Image className={"hero-photo shrink-0"}
+                       src={"/images/profile-placeholder.webp"}
+                       width={250}
+                       height={250}
+                       alt={"Picture of author"}
                 />
             </div>
 
