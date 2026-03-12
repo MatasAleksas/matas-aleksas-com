@@ -4,11 +4,9 @@ import {motion, AnimatePresence} from "framer-motion";
 import Stack from "./Stack";
 import TwoTruths from "./TwoTruths";
 import {personal} from "@/data/personal";
-import { useInView } from "@/hooks/useInView";
 
 export default function Personal() {
     const [currentIndex, setCurrentIndex] = useState(personal.length - 1);
-    const [personalRef, personalInView] = useInView();
 
     const handleCardChange = (index) => {
         console.log("Card index:", index);
@@ -27,7 +25,7 @@ export default function Personal() {
         )), []);
 
     return (
-      <section id="personal" ref={personalRef} className="py-32 px-6 max-w-6xl mx-auto">
+      <section id="personal" className="py-32 px-6 max-w-6xl mx-auto">
           <motion.h2
               className="text-4xl font-bold text-center mb-20 text-orange"
               initial={{ opacity: 0, y: 30 }}
@@ -53,7 +51,6 @@ export default function Personal() {
               <div className="flex flex-col items-center">
 
                   <div style={{ width: 350, height: 350 }}>
-                      {personalInView &&
                         <Stack
                           randomRotation={false}
                           sensitivity={200}
@@ -61,7 +58,7 @@ export default function Personal() {
                           onCardChange={handleCardChange}
                           sendToBackOnClick={true}
                           autoplay={false}
-                        />}
+                        />
                   </div>
 
                   <div className="flex gap-1 mt-4">
@@ -86,7 +83,7 @@ export default function Personal() {
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -20 }}
                       transition={{ duration: 0.3 }}
-                      className="max-w-md min-h-[200px] flex flex-col justify-center"
+                      className="max-w-md min-h-50 flex flex-col justify-center"
                   >
                       <h3 className="text-2xl font-bold text-orange mb-4">
                           {personal[currentIndex]?.title}
