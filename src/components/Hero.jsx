@@ -76,7 +76,7 @@ export default function Hero() {
                 </div>
 
                 <Image className={"hero-photo"}
-                    src={"/images/profile-placeholder.jpg"}
+                    src={"/images/profile-placeholder.webp"}
                     width={250}
                     height={250}
                     alt={"Picture of author"}
