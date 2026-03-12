@@ -4,26 +4,9 @@ export default function Footer() {
     return (
         <footer className="border-t border-white/10 py-8 px-6">
             <div>
-                <div className="footer-marquee mb-6">
-                    <p>
-                        © 2026 Matas Aleksas • All Rights Reserved •&nbsp;
-                        © 2026 Matas Aleksas • All Rights Reserved •&nbsp;
-                        © 2026 Matas Aleksas • All Rights Reserved •&nbsp;
-                        © 2026 Matas Aleksas • All Rights Reserved •&nbsp;
-                        © 2026 Matas Aleksas • All Rights Reserved •&nbsp;
-                        © 2026 Matas Aleksas • All Rights Reserved •&nbsp;
-                        © 2026 Matas Aleksas • All Rights Reserved •&nbsp;
-                        © 2026 Matas Aleksas • All Rights Reserved •&nbsp;
-                        © 2026 Matas Aleksas • All Rights Reserved •&nbsp;
-                        © 2026 Matas Aleksas • All Rights Reserved •&nbsp;
-                        © 2026 Matas Aleksas • All Rights Reserved •&nbsp;
-                        © 2026 Matas Aleksas • All Rights Reserved •&nbsp;
-                        © 2026 Matas Aleksas • All Rights Reserved •&nbsp;
-                        © 2026 Matas Aleksas • All Rights Reserved •&nbsp;
-                        © 2026 Matas Aleksas • All Rights Reserved •&nbsp;
-                        © 2026 Matas Aleksas • All Rights Reserved •&nbsp;
-                    </p>
-                </div>
+                <p className="text-center text-grey text-sm mb-5">
+                    © 2026 Matas Aleksas • All Rights Reserved
+                </p>
 
                 <div className="flex justify-center gap-6">
                     <a href="https://github.com/MatasAleksas" target="_blank" rel="noopener noreferrer" className="underline text-grey hover:text-orange transition-colors">GitHub</a>
