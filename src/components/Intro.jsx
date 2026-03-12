@@ -60,7 +60,7 @@ export default function Intro() {
                     className="intro-p"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0 }}
                     transition={{ duration: 1, delay: 3}}
                 >
                     I’m a student at the <span className="text-orange"> University of New Hampshire </span>who enjoys
@@ -74,7 +74,7 @@ export default function Intro() {
                     className="intro-p"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0 }}
                     transition={{ duration: 1, delay: 3.4 }}
                 >
                     Right now, I’m <span className="text-orange"> focused </span>

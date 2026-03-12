@@ -12,7 +12,7 @@ export default function Professional() {
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0 }}
                     transition={{ duration: 0.5 }}
                     className="text-3xl font-bold text-center mb-16"
                 >
@@ -24,7 +24,7 @@ export default function Professional() {
                         <motion.h2
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: true, amount: 0 }}
                             transition={{ duration: 0.5 }}
                             className="text-xl font-bold text-orange mb-4"
                         >
@@ -36,7 +36,7 @@ export default function Professional() {
                                 key={index}
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0 }}
                                 transition={{ duration: 0.5, delay: index * 0.2 }}
                             >
                                 <SpotlightCard key={index} spotlightColor="rgba(251, 116, 45, 0.2)">
@@ -66,7 +66,7 @@ export default function Professional() {
                         <motion.h2
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: true, amount: 0 }}
                             transition={{ duration: 0.5 }}
                             className="text-xl font-bold text-orange mb-4"
                         >
@@ -78,7 +78,7 @@ export default function Professional() {
                                 key={index}
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0 }}
                                 transition={{ duration: 0.5, delay: index * 0.2 }}
                             >
 
@@ -119,7 +119,7 @@ export default function Professional() {
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0 }}
                     transition={{ duration: 0.5 }}
                     className="text-xl font-bold text-orange"
                 >
@@ -132,7 +132,7 @@ export default function Professional() {
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: true, amount: 0 }}
                             transition={{ duration: 0.4, delay: index * 0.15 }}
                         >
                             <div className="bg-white/3 rounded-xl px-6 py-4 border border-white/10">
@@ -147,7 +147,7 @@ export default function Professional() {
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0 }}
                     transition={{ duration: 0.5 }}
                     className="mt-16 text-center"
                 >

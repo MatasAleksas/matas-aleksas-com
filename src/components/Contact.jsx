@@ -53,7 +53,7 @@ export default function Contact() {
                     className="text-4xl font-bold text-center mb-4"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0 }}
                     transition={{ duration: 0.6 }}
                 >
                     Let&#39;s <span><ShinyText
@@ -74,7 +74,7 @@ export default function Contact() {
                     className="text-center text-[#cccccc] mb-12"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                 >
                     Thanks for stopping by. I&#39;m always open to new opportunities,
@@ -85,7 +85,7 @@ export default function Contact() {
                     onSubmit={handleSubmit}
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0 }}
                     transition={{ duration: 0.6, delay: 0.4 }}
                 >
                     <div className="flex flex-col gap-6">
@@ -153,7 +153,7 @@ export default function Contact() {
                     className="text-center mt-12"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, amount: 0 }}
                     transition={{ duration: 0.6, delay: 0.6 }}
                 >
                     <p className="text-[#cccccc] mb-4">Or find me elsewhere</p>

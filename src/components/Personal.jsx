@@ -28,10 +28,10 @@ export default function Personal() {
       <section id="personal" className="py-32 px-6 max-w-6xl mx-auto">
           <motion.h2
               className="text-4xl font-bold text-center mb-20 text-orange"
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
+              viewport={{ once: true, amount: 0 }}
+              transition={{ duration: 0.6 }}
           >
               When I&#39;m not coding...
           </motion.h2>
@@ -40,7 +40,7 @@ export default function Personal() {
               className="text-center text-[#cccccc] mb-6 text-lg"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
           >
               Here&#39;s what I&#39;m all about.
